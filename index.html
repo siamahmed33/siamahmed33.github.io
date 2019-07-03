@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="practice.css">
+        <style>
+            .some_p{
+                color:red; /*notice the dot*/
+            }
+            h2{
+                color:blue;
+            }
+            #uniqueH2{
+                color:goldenrod; /*otice the #*/
+            }
+        </style>
+        <!--link rel="stylesheet" type="text/css" href="practice.css"-->
+    </head>
+<body>
+
+<p>This paragraph is blue as it follows common property of p defined in practice.css. 
+    It is colored by External CSS, it doesn't have any internal or inline CSS. 
+</p>
+
+<p style="color:MediumSeaGreen;">This is an inline CSS, it has the highest priority, but this color won't be in any other p.</p>
+
+<p class="some_p">
+    This is an example of internal CSS. Here class some_p is defined in style tag of this file. class has higher priority over commonly defined 
+    CSS on an element.
+</p>
+
+<h2>
+    This h2 is red if link is defined after style and blue otherwise. If same style is defined in different ways, then element 
+    follows the last rule. 
+</h2>
+
+<h2 id="uniqueH2">An example of id, it has higher priority like class, so it won't follow common property. </h2>
+
+<a href="https://www.youtube.com">This is an example of pseudo class. Check CSS code for understanding behavior.</a>
+
+<h3>Another example of pseudo-class. It is not only appicable to links.</h3>
+<div style="color:rosybrown;background-color: seagreen">
+    <h2>h2 under a div</h2>
+    <h3>h3 under a div</h3>
+    <p>paragraph under a div, but it has a <span style="color:indigo;">span</span> inside it. </p>
+    <p>
+        Here color isn't effective, but bracground color is. Because color is already defined for elements, and it has higher priority over 
+        styling definition of container. 
+    </p>
+</div>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+</body>
+</html>
+
+</body>
+</html>
